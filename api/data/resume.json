@@ -1,0 +1,97 @@
+{
+    "basics": {
+        "name": "Flávio Oliveira Silva Júnior",
+        "label": "Bacharel em Ciência da Computação",
+        "email": "flavinhoolvs@gmail.com",
+        "phone": "(84) 992211692",
+        "location": "Parnamirim, RN",
+        "website": "https://flavinho-personal-dev.vercel.app/",
+        "summary": "Profissional com formação técnica e superior em computação, com experiência em suporte, desenvolvimento web e interação bilíngue. Focado em automação e desenvolvimento full-stack."
+    },
+    "education": [
+        {
+            "institution": "UFRN",
+            "area": "Bacharelado em Ciência da Computação",
+            "startDate": "2024",     
+            "endDate": "Atualmente"
+        },
+        {
+            "institution": "IFRN",
+            "area": "Técnico em Informática",
+            "startDate": "2019",
+            "endDate": "2023"
+        }
+    ],
+    "experience": [
+        {
+            "company": "Teleperformance",
+            "position": "Expert em Interação Bilíngue",
+            "startDate": "2024",
+            "endDate": "Atualmente",
+            "summary": "Atendimento e suporte ao cliente em ambiente bilíngue."
+        }
+    ],
+    "projects": [
+        {
+            "name": "Compra Solidária",
+            "position": "Desenvolvedor",
+            "startDate": "2023",
+            "endDate": "2023",
+            "summary": "Sistema para integrar agricultores familiares da região Agreste de Nova Cruz diretamente aos consumidores."
+        },
+        {
+            "name": "Website V SEMADEC",
+            "position": "Desenvolvedor",
+            "startDate": "2022",
+            "endDate": "2022",
+            "summary": "Portal online para administração de inscrições e pontuações da Semana de Arte, Desporto e Cultura do IFRN."
+        },
+        {
+            "name": "Suporte e Manutenção em Escolas",
+            "position": "Técnico de Manutenção",
+            "startDate": "2022",
+            "endDate": "2023",
+            "summary": "Projeto de extensão para suporte técnico e manutenção de microcomputadores em escolas de Nova Cruz."
+        }
+    ],
+    "courses": [
+        {
+            "title": "Python do básico ao avançado",
+            "institution": "Hora de Codar",
+            "hours": 36,
+            "summary": "Domínio completo de Python, automação, POO, stack científica (NumPy, Pandas) e back-end com Flask/Django."
+        },
+        {
+            "title": "Python Intermediário",
+            "institution": "Datacamp",
+            "hours": 4,
+            "summary": "Visualização de dados com Matplotlib e estruturas como dicionários e DataFrames do pandas."
+        },
+        {
+            "title": "Introdução ao Python",
+            "institution": "Datacamp",
+            "hours": 4,
+            "summary": "Conceitos fundamentais, variáveis, tipos e listas."
+        },
+        {
+            "title": "Compreendendo o Aprendizado de Máquina",
+            "institution": "Datacamp",
+            "hours": 2,
+            "summary": "Funcionamento do aprendizado de máquina e distinção entre IA e ML."
+        }
+    ],
+    "skills": {
+        "technical_support": [
+            "Diagnóstico e Resolução de Problemas (Hardware/Software)",
+            "Suporte a Sistemas Operacionais (Windows, Linux, macOS)",
+            "Banco de Dados (SQL/MySQL)",
+            "Redes (TCP/IP, DNS, DHCP)",
+            "Manutenção de Hardware e Periféricos"
+        ],
+        "technical_extras": [
+            "Automação de Tarefas com Python",
+            "Análise de Aplicações Web (JavaScript, React)",
+            "Noções do Ciclo de Vida de Desenvolvimento de Software"
+        ]
+    }
+}

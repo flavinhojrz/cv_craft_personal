@@ -1,0 +1,93 @@
+<!-- HTML (index.html) -->
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Currículo - Flávio</title>
+  </head>
+  <body>
+    <h1>{{ basics.name }}</h1>
+    <p>{{ basics.label }} | {{ basics.location }}</p>
+    <p>
+      Email: {{ basics.email }} | Telefone: {{ basics.phone }} |<a
+        href="{{ basics.website }}"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {{ basics.website }}
+      </a>
+    </p>
+    <hr />
+
+    <div class="section">
+      <h3>Resumo</h3>
+      <p>{{ basics.summary }}</p>
+    </div>
+
+    <div class="section">
+      <h3>Formação Acadêmica</h3>
+      {% for edu in education %}
+      <div>
+        <strong>{{ edu.institution }}</strong><br />
+        <small>
+          {{ edu.area }}<br />
+          {% if edu.startDate %} {{ edu.startDate }} - {{ edu.endDate }} {% elif
+          edu.year %} {{ edu.year }} {% endif %}
+        </small>
+      </div>
+      <br />
+      {% endfor %}
+    </div>
+
+    <div class="section">
+      <h3>Experiência</h3>
+      {% for job in experience %}
+      <div>
+        <strong>{{ job.company }}</strong> - {{ job.position }}<br />
+        <small>{{ job.startDate }} - {{ job.endDate }}</small>
+        <p>{{ job.summary }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="section">
+      <h3>Projetos</h3>
+      {% for project in projects %}
+      <div>
+        <strong>{{ project.name }}</strong> - {{ project.position }}<br />
+        <small>{{ project.startDate }} - {{ project.endDate }}</small>
+        <p>{{ project.summary }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="section">
+      <h3>Cursos</h3>
+      {% for course in courses %}
+      <div>
+        <strong>{{ course.title }}</strong> — {{ course.institution }} ({{
+        course.hours }}h)
+        <p>{{ course.summary }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="section">
+      <h3>Habilidades</h3>
+      <strong>Técnicas (TI e Suporte):</strong>
+      <ul>
+        {% for s in skills.technical_support %}
+        <li>{{ s }}</li>
+        {% endfor %}
+      </ul>
+
+      <strong>Diferenciais Técnicos:</strong>
+      <ul>
+        {% for s in skills.technical_extras %}
+        <li>{{ s }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
